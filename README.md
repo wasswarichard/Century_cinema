@@ -1,4 +1,5 @@
 # Century Cinema
+[Live Demo](https://century-cinema-7eg11m77x-wasswarichard.vercel.app/ 'century Cinema')
 
 ## Libraries/Frameworks used
 

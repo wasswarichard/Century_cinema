@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const APP_ENDPOINT_URL = 'http://www.omdbapi.com';
+const APP_ENDPOINT_URL = 'https://www.omdbapi.com';
 const APP_API_KEY = '282106fa';
 
 const useFetch = (props: any) => {
