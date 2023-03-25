@@ -16,7 +16,7 @@
 ## To run locally
 
 -  Inside the directory, run `npm install` to install the frontend dependencies.
--  Start the frontend dev server using `npm start`.
+-  Start the frontend dev server using `npm run dev`.
 -  To run tests run `npm test`. This launches the test runner in the interactive watch mode.
 
 ## Test cases snapshot
