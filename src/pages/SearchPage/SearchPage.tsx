@@ -37,8 +37,8 @@ const SearchPage: FC<ISearchPageProps> = () => {
       setCurrentPage(newPage);
    };
 
-   const handleOnClickCard = (imdbID: string) => {
-      navigate(`/details/${imdbID}`);
+   const handleOnClickCard = (imdbID: string, title: string) => {
+      navigate(`/details/${imdbID}/${title}`);
    };
    const breadcrumbs = [
       { label: 'Explorer', navigateTo: '/' },

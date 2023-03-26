@@ -7,7 +7,7 @@ import DetailsInfo from './DetailsInfo';
 
 export interface IMovieDetailsProps {}
 const MovieDetailsPage: FC<IMovieDetailsProps> = () => {
-   const { imdbID } = useParams<string>();
+   const { imdbID, title } = useParams<string>();
    const { data, loading } = useFetch({
       i: imdbID,
    });
@@ -15,7 +15,7 @@ const MovieDetailsPage: FC<IMovieDetailsProps> = () => {
    const breadcrumbs = [
       { label: 'Explorer', navigateTo: '/' },
       { label: 'Movies', navigateTo: '/' },
-      { label: `${data?.Title}`, navigateTo: `/details/${imdbID}` },
+      { label: `${title}`, navigateTo: `/details/${imdbID}` },
    ];
 
    return (

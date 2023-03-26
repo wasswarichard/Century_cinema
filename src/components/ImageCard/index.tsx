@@ -7,12 +7,12 @@ export interface IImageCardProps {
    url: string;
    title: string;
    year: string;
-   handleOnClickCard: (imdbID: string) => void;
+   handleOnClickCard: (imdbID: string, title: string) => void;
 }
 
 const ImageCard: FC<IImageCardProps> = ({ imdbID, url, title, year, handleOnClickCard }) => {
    return (
-      <Card sx={{ maxWidth: 400 }} className="card" onClick={() => handleOnClickCard(imdbID)}>
+      <Card sx={{ maxWidth: 400 }} className="card" onClick={() => handleOnClickCard(imdbID, title)}>
          <CardMedia component="img" height="245" image={url} data-src={url} alt={title} />
          <CardContent>
             <Typography gutterBottom variant="h6" component="div">

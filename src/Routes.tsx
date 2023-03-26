@@ -11,7 +11,7 @@ const RoutePaths: FC<IRoutePathsProps> = () => {
       <BrowserRouter>
          <Routes>
             <Route path="/" element={<SearchPage />} />
-            <Route path="/details/:imdbID" element={<MovieDetailsPage />} />
+            <Route path="/details/:imdbID/:title" element={<MovieDetailsPage />} />
             <Route path="*" element={<ResourceNotFoundPage />} />
          </Routes>
       </BrowserRouter>
