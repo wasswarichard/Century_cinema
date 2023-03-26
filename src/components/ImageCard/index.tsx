@@ -12,7 +12,11 @@ export interface IImageCardProps {
 
 const ImageCard: FC<IImageCardProps> = ({ imdbID, url, title, year, handleOnClickCard }) => {
    return (
-      <Card sx={{ maxWidth: 400 }} className="card" onClick={() => handleOnClickCard(imdbID, title)}>
+      <Card
+         sx={{ maxWidth: 400 }}
+         className="card"
+         onClick={() => handleOnClickCard(imdbID, title)}
+      >
          <CardMedia component="img" height="245" image={url} data-src={url} alt={title} />
          <CardContent>
             <Typography gutterBottom variant="h6" component="div">

@@ -1,10 +1,10 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
-import { Breadcrumbs, Loader, Pagination, Alert } from '../../components';
+import { Breadcrumbs, Loader, Pagination, Snackbar } from '../../components';
 import ImageCard from '../../components/ImageCard';
 import './index.sass';
-import { Grid, Snackbar, TextField, Typography } from '@mui/material';
+import { Grid, TextField, Typography } from '@mui/material';
 
 export interface ISearchPageProps {}
 type IResult = {
@@ -87,15 +87,7 @@ const SearchPage: FC<ISearchPageProps> = () => {
             <div>{loading && <Loader />}</div>
          </Grid>
          {searchField && !data?.Search && !loading && (
-            <Snackbar
-               open={!loading}
-               anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'center',
-               }}
-            >
-               <Alert severity="error">{data?.Error}</Alert>
-            </Snackbar>
+            <Snackbar loading={loading} message={data?.Error} />
          )}
       </Grid>
    );
