@@ -15,7 +15,7 @@ const MovieDetailsPage: FC<IMovieDetailsProps> = () => {
    const breadcrumbs = [
       { label: 'Explorer', navigateTo: '/' },
       { label: 'Movies', navigateTo: '/' },
-      { label: `${title}`, navigateTo: `/details/${imdbID}` },
+      { label: `${title}`, navigateTo: `/details/${imdbID}/${title}` },
    ];
 
    return (
