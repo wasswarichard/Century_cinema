@@ -5,9 +5,9 @@ phrase:
     sources:
     - file: .\src\phrase\en.json
       params:
-        file_format: react_simple_json
+        file_format: simple_json
   pull:
     targets:
     - file: .\src\phrase\en.json
       params:
-        file_format: react_simple_json
+        file_format: simple_json
