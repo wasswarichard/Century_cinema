@@ -1,14 +1,13 @@
 phrase:
   access_token: d6b4e1f1a9270cd827bfc997d6b14eb41d7d29da0e5081b9b9615de743135efd
   project_id: 8116f0bda60c8a831b72a9aa13a98320
-   file_format: "json"
   push:
     sources:
     - file: .\src\phrase\en.json
       params:
-        file_format: nested_json
+        file_format: react_simple_json
   pull:
     targets:
     - file: .\src\phrase\en.json
       params:
-        file_format: nested_json
+        file_format: react_simple_json
