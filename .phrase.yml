@@ -5,11 +5,11 @@ phrase:
 
   push:
     sources:
-    - file: ./src/phrase
+    - file: .\src\phrase\en.json
       params:
         file_format: json
   pull:
     targets:
-    - file: ./src/phrase
+    - file: .\src\phrase\en.json
       params:
         file_format: json
