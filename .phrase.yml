@@ -4,10 +4,8 @@ phrase:
   push:
     sources:
     - file: .\src\phrase\en.json
-      params:
-        file_format: simple_json
+      
   pull:
     targets:
     - file: .\src\phrase\en.json
-      params:
-        file_format: simple_json
+     
